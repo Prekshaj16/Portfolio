@@ -1,5 +1,5 @@
 
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -43,7 +43,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="flex justify-center space-x-6 mb-12">
+          <div className="flex justify-center space-x-6">
             {[
               { icon: Github, href: '#', label: 'GitHub' },
               { icon: Linkedin, href: '#', label: 'LinkedIn' },
@@ -58,13 +58,6 @@ const Hero = () => {
               </a>
             ))}
           </div>
-
-          <button 
-            onClick={() => scrollToSection('#about')}
-            className="animate-bounce"
-          >
-            <ArrowDown size={32} className="text-foreground/60 hover:text-foreground transition-colors" />
-          </button>
         </div>
       </div>
     </section>
