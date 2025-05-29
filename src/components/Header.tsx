@@ -37,7 +37,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold gradient-text">
-            DevPortfolio
+            Preksha's Portfolio
           </div>
 
           {/* Desktop Navigation */}
@@ -46,7 +46,7 @@ const Header = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="flex items-center space-x-1 text-foreground/80 hover:text-foreground transition-colors duration-300 hover:text-glow"
+                className="flex items-center space-x-1 text-foreground/80 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-400 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text transition-all duration-300 hover:text-glow"
               >
                 <item.icon size={16} />
                 <span>{item.name}</span>
@@ -70,7 +70,7 @@ const Header = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="flex items-center space-x-2 w-full py-2 text-foreground/80 hover:text-foreground transition-colors"
+                className="flex items-center space-x-2 w-full py-2 text-foreground/80 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-400 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text transition-all duration-300"
               >
                 <item.icon size={16} />
                 <span>{item.name}</span>
