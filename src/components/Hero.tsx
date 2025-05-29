@@ -21,9 +21,8 @@ const Hero = () => {
             <span className="text-glow font-medium">Preksha Jain</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto">  &quot;Merging Web Tech &amp; AI for Next-  Gen Development&quot;
-
- I am a Full Stack Developer and AI/ML Enthusiast, creating scalable, intelligent applications that blend innovation with efficiency. I craft smart solutions that automate processes and enhance decision-making. 🚀</p>
+          <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto">&quot;Merging Web Tech &amp; AI for Next- Gen Development&quot; 
+I am a Full Stack Developer and AI/ML Enthusiast, creating scalable, intelligent applications that blend innovation with efficiency. I craft smart solutions that automate processes and enhance decision-making. 🚀</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button onClick={() => scrollToSection('#projects')} className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-lg glow-hover">
