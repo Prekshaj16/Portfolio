@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 const image = "/Preksha.png";
@@ -25,9 +24,9 @@ const Hero = () => {
     {/* <div className="absolute inset-0 rounded-full border-[6px] border-transparent bg-gradient-to-r from-purple-500 to-indigo-700"></div> */}
 
     {/* Inner Circle */}
-           <div  className="w-90 h-90 rounded-full object-cover border-4 border-blue-500 shadow-lg">
+           <div className="w-full h-full rounded-full overflow-hidden border-4 border-blue-500 shadow-lg bg-background">
       <img 
-  className="w-full h-full object-cover object-center rounded-full transition-transform duration-600 scale-[1] bg-background" 
+  className="w-full h-full object-cover object-center rounded-full transition-transform duration-600 scale-[1]" 
   alt="Preksha Jain" 
   src={image} 
 />
