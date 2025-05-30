@@ -1,3 +1,4 @@
+
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 const image = "/Preksha.png";
@@ -19,14 +20,14 @@ const Hero = () => {
     <div className="container mx-auto px-6 text-center relative z-10 ">
       <div className="animate-fade-in">
        <div className="flex justify-center items-center w-full">
-  <span className="relative flex shrink-0 rounded-full w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 overflow-hidden bg-gray-900 p-[6px] shadow-lg">
+  <span className="relative flex shrink-0 rounded-full w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 overflow-hidden bg-background p-[6px] shadow-lg">
     {/* Gradient Border */}
     {/* <div className="absolute inset-0 rounded-full border-[6px] border-transparent bg-gradient-to-r from-purple-500 to-indigo-700"></div> */}
 
     {/* Inner Circle */}
            <div  className="w-90 h-90 rounded-full object-cover border-4 border-blue-500 shadow-lg">
       <img 
-  className="w-full h-full object-cover object-center rounded-full transition-transform duration-600 scale-[1]" 
+  className="w-full h-full object-cover object-center rounded-full transition-transform duration-600 scale-[1] bg-background" 
   alt="Preksha Jain" 
   src={image} 
 />
