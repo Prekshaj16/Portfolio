@@ -31,29 +31,33 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-background/80 backdrop-blur-md border-b border-border' : 'bg-transparent'
-    }`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-md border-b border-border' : 'bg-transparent'
+      }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold gradient-text">
-            Preksha's Portfolio
-          </div>
+
+          <div className=" rounded-lg flex items-center justify-center">
+  <img 
+    src="/logo.png" 
+    alt="Logo" 
+    className="h-20 w-auto rounded-lg"
+  />
+</div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+
+          <div className="hidden md:flex space-x-1">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="flex items-center space-x-1 text-foreground/80 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-400 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text transition-all duration-300 hover:text-glow"
+                className="flex items-center space-x-2 px-4 py-2 rounded-lg text-foreground/80 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-400 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text transition-all duration-300 hover:text-glow"
               >
-                <item.icon size={16} />
-                <span>{item.name}</span>
+                <item.icon className="text-xl text-foreground/80 hover:text-glow" />
+                <span className="text-lg font-semibold">{item.name}</span>
               </button>
             ))}
           </div>
-
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2"

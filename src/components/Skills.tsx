@@ -7,10 +7,9 @@ const Skills = () => {
     {
       title: "Frontend",
       skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
+        { name: "React", level: 95 },
+        { name: "JavaScript", level: 90 },
         { name: "Tailwind CSS", level: 95 },
-        { name: "Vue.js", level: 80 }
       ]
     },
     {
@@ -18,7 +17,6 @@ const Skills = () => {
       skills: [
         { name: "Node.js", level: 90 },
         { name: "Python", level: 85 },
-        { name: "PostgreSQL", level: 85 },
         { name: "MongoDB", level: 80 }
       ]
     },
@@ -26,9 +24,8 @@ const Skills = () => {
       title: "DevOps & Tools",
       skills: [
         { name: "AWS", level: 85 },
-        { name: "Docker", level: 80 },
+        { name: "Docker", level: 60 },
         { name: "Git", level: 95 },
-        { name: "CI/CD", level: 75 }
       ]
     }
   ];
@@ -40,8 +37,7 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Skills & Expertise</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded"></div>
           <p className="text-foreground/70 mt-6 max-w-2xl mx-auto">
-            A comprehensive toolkit built through years of hands-on experience and continuous learning
-          </p>
+             I craft visually striking, responsive designs with precision and creativity." </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -73,11 +69,11 @@ const Skills = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-foreground/70 mb-6">Technologies I work with daily</p>
+          <p className="text-foreground/70 mb-6">Technologies I work with</p>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'React', 'TypeScript', 'Node.js', 'Python', 'AWS', 'Docker', 
-              'PostgreSQL', 'MongoDB', 'GraphQL', 'REST APIs', 'Git', 'Jest'
+              'React.js', 'Node.js', 'Python', 
+               'MongoDB', 'REST APIs', 'Git'
             ].map((tech) => (
               <span 
                 key={tech}

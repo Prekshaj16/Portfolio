@@ -22,7 +22,7 @@ const About = () => {
     {
       icon: Coffee,
       title: "Collaboration",
-      description: "Working seamlessly with teams to deliver exceptional results"
+      description: "Working seamlessly with teams "
     }
   ];
 
@@ -36,21 +36,18 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              I'm a passionate full-stack developer with over 5 years of experience creating 
-              digital experiences that make a difference. My journey started with a curiosity 
-              about how websites work, and it has evolved into a deep love for crafting 
-              beautiful, functional applications.
+            <p className="text-lg text-foreground/80 leading-relaxed ">
+              I'm a passionate Full-stack developer eager to create impactful digital experiences. My journey began with a deep curiosity about how websites work, which has grown into a strong dedication to crafting beautiful and functional applications. 
+              As a fresher, I'm constantly learning, refining my skills, and exploring new technologies to build user-friendly solutions.
             </p>
             
-            <p className="text-lg text-foreground/80 leading-relaxed">
+            <p className="text-lg text-foreground/80 leading-relaxed ">
               When I'm not coding, you'll find me exploring new technologies, contributing to 
-              open-source projects, or sharing knowledge with the developer community. I believe 
-              in the power of clean code, user-centered design, and continuous learning.
-            </p>
+              open-source projects. Continuous learning drives my passion for building intuitive, responsive applications.
+              </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              {['React', 'TypeScript', 'Node.js', 'Python', 'AWS', 'Docker'].map((tech) => (
+              {['React.js', 'MongoDB', 'Node.js', 'Python', 'Java'].map((tech) => (
                 <span 
                   key={tech}
                   className="px-4 py-2 bg-accent rounded-full text-sm font-medium border border-border hover:border-blue-500 transition-colors"

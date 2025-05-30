@@ -2,6 +2,7 @@
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github, Code, Palette, Zap } from 'lucide-react';
+const image = "/Recipe.png";
 
 const Projects = () => {
   const projects = [
@@ -21,18 +22,24 @@ const Projects = () => {
       tags: ["React", "Storybook", "TypeScript", "CSS-in-JS"],
       github: "#",
       live: "#",
-      icon: Palette
+      icon: Code
     },
     {
-      title: "Real-time Analytics Dashboard",
-      description: "A responsive dashboard for tracking KPIs with real-time updates, interactive charts, and customizable widgets. Built for scalability and performance.",
-      image: "/placeholder.svg",
-      tags: ["Vue.js", "D3.js", "WebSocket", "Express"],
-      github: "#",
-      live: "#",
-      icon: Zap
+      title: "Recipe Recommendation System",
+      description: "A dynamic recipe recommendation system that displays multiple recipe videos and allows seamless playback for an interactive cooking experience.",
+      
+      tags: ["React.js", "Tailwind CSS", "API"],
+      github: "https://github.com/Prekshaj16/RecipeApp_react.js",
+      image : <img 
+      src = {image} />,
+      live: "https://recipe-app-react-js-fawn.vercel.app/",
+      icon: Code 
     }
-  ];
+  ]
+
+
+
+      
 
   return (
     <section id="projects" className="py-20">

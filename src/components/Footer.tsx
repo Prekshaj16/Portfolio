@@ -5,8 +5,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/Prekshaj16', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/preksha-jain16/', label: 'LinkedIn' },
     { icon: Mail, href: '#contact', label: 'Email' }
   ];
 
@@ -15,14 +15,14 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-background border-t border-border py-12">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col items-center space-y-6">
+    <footer className="bg-background border-t border-border py-5">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center space-y-4s">
           <button 
             onClick={scrollToTop}
             className="text-2xl font-bold gradient-text hover:scale-105 transition-transform"
           >
-            DevPortfolio
+            
           </button>
           
           <div className="flex space-x-6">
@@ -40,12 +40,10 @@ const Footer = () => {
           
           <div className="text-center text-foreground/70">
             <p className="flex items-center justify-center space-x-1">
-              <span>Made with</span>
-              <Heart size={16} className="text-red-500 animate-pulse" />
-              <span>by Alex Developer</span>
+              
             </p>
-            <p className="text-sm mt-2">
-              © {currentYear} All rights reserved.
+            <p className="text-1xl mt-2">
+              Copyright © Preksha Jain. All rights reserved.
             </p>
           </div>
         </div>

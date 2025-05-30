@@ -118,9 +118,13 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'fade-up-full': 'fade-up-full 1s ease-in-out forwards',
 				'float': 'float 3s ease-in-out infinite'
 			}
 		}
+
+
+		
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
