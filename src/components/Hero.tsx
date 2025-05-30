@@ -19,19 +19,14 @@ const Hero = () => {
     <div className="container mx-auto px-6 text-center relative z-10 ">
       <div className="animate-fade-in">
        <div className="flex justify-center items-center w-full">
-  <span className="relative flex shrink-0 rounded-full w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 overflow-hidden bg-background p-[6px] shadow-lg">
-    {/* Gradient Border */}
-    {/* <div className="absolute inset-0 rounded-full border-[6px] border-transparent bg-gradient-to-r from-purple-500 to-indigo-700"></div> */}
-
-    {/* Inner Circle */}
-           <div className="w-full h-full rounded-full overflow-hidden border-4 border-blue-500 shadow-lg bg-background">
-      <img 
-  className="w-full h-full object-cover object-center rounded-full transition-transform duration-600 scale-[1]" 
-  alt="Preksha Jain" 
-  src={image} 
-/>
-    </div>
-  </span>
+  <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56">
+    {/* Profile Image with Border */}
+    <img 
+      className="w-full h-full object-cover object-center rounded-full border-4 border-blue-500 shadow-lg bg-background" 
+      alt="Preksha Jain" 
+      src={image} 
+    />
+  </div>
 </div>
         <h1 className="text-5xl md:text-6xl font-bold mb-5 animate-fade-in duration-700 delay-600 w-full h-full opacity-90">
           <span className="text-glow font-medium">Preksha Jain</span>
