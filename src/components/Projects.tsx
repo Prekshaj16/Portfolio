@@ -91,9 +91,8 @@ const Projects = () => {
                 
                 <div className="flex gap-3">
                   <Button 
-                    variant="outline" 
                     size="sm"
-                    className="flex-1 border-border hover:border-blue-500"
+                    className="flex-1 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
                     onClick={() => handleLinkClick(project.github)}
                   >
                     <Github size={16} className="mr-2" />
