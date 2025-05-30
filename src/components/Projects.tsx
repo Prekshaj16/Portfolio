@@ -42,15 +42,17 @@ const Projects = () => {
       
 
   return (
-    <section id="projects" className="py-20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Featured Projects</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded"></div>
-          <p className="text-foreground/70 mt-6 max-w-2xl mx-auto">
-            A showcase of some of my recent work, demonstrating different technologies and problem-solving approaches
-          </p>
-        </div>
+    <section id="projects" className="py-24"> {/* Increased padding */}
+  <div className="container mx-auto px-6">
+    <div className="text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-bold mb-6 gradient-text leading-tight">
+        My Projects
+      </h2>
+      <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded"></div>
+      <p className="text-foreground/70 mt-6 max-w-2xl mx-auto">
+        A showcase of some of my recent work, demonstrating different technologies and problem-solving approaches.
+      </p>
+      </div>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (

@@ -1,6 +1,6 @@
-
 import { Card } from '@/components/ui/card';
 import { Code, Coffee, Lightbulb, Rocket } from 'lucide-react';
+const image = "/Preksha.png";
 
 const About = () => {
   const highlights = [
@@ -35,7 +35,15 @@ const About = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+          <div className="space-y-6 flex flex-col items-center lg:items-start">
+            
+            {/* Round Profile Image */}
+            <img
+              src={image} 
+              alt="My Photo"
+              className="w-80 h-80 rounded-full object-cover border-4 border-blue-500 shadow-lg"
+            />
+
             <p className="text-lg text-foreground/80 leading-relaxed ">
               I'm a passionate Full-stack developer eager to create impactful digital experiences. My journey began with a deep curiosity about how websites work, which has grown into a strong dedication to crafting beautiful and functional applications. 
               As a fresher, I'm constantly learning, refining my skills, and exploring new technologies to build user-friendly solutions.
@@ -44,7 +52,7 @@ const About = () => {
             <p className="text-lg text-foreground/80 leading-relaxed ">
               When I'm not coding, you'll find me exploring new technologies, contributing to 
               open-source projects. Continuous learning drives my passion for building intuitive, responsive applications.
-              </p>
+            </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
               {['React.js', 'MongoDB', 'Node.js', 'Python', 'Java'].map((tech) => (
@@ -59,17 +67,17 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {highlights.map((item, index) => (
+            {highlights.map(({ icon: Icon, title, description }, index) => (
               <Card 
                 key={index}
                 className="p-6 bg-card border-border hover:border-blue-500/50 transition-all duration-300 glow-hover group"
               >
                 <div className="flex flex-col items-center text-center space-y-4">
                   <div className="p-3 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-600/20 group-hover:from-blue-500/30 group-hover:to-purple-600/30 transition-all">
-                    <item.icon size={24} className="text-blue-400" />
+                    <Icon size={24} className="text-blue-400" />
                   </div>
-                  <h3 className="font-semibold text-lg">{item.title}</h3>
-                  <p className="text-foreground/70 text-sm">{item.description}</p>
+                  <h3 className="font-semibold text-lg">{title}</h3>
+                  <p className="text-foreground/70 text-sm">{description}</p>
                 </div>
               </Card>
             ))}
