@@ -37,22 +37,24 @@ const Projects = () => {
     }
   ]
 
-
-
-      
+  const handleLinkClick = (url: string) => {
+    if (url && url !== "#") {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  };
 
   return (
-    <section id="projects" className="py-24"> {/* Increased padding */}
-  <div className="container mx-auto px-6">
-    <div className="text-center mb-16">
-      <h2 className="text-5xl md:text-6xl font-bold mb-6 gradient-text leading-tight">
-        My Projects
-      </h2>
-      <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded"></div>
-      <p className="text-foreground/70 mt-6 max-w-2xl mx-auto">
-        A showcase of some of my recent work, demonstrating different technologies and problem-solving approaches.
-      </p>
-      </div>
+    <section id="projects" className="py-24">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 gradient-text leading-tight">
+            My Projects
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded"></div>
+          <p className="text-foreground/70 mt-6 max-w-2xl mx-auto">
+            A showcase of some of my recent work, demonstrating different technologies and problem-solving approaches.
+          </p>
+        </div>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
@@ -92,6 +94,7 @@ const Projects = () => {
                     variant="outline" 
                     size="sm"
                     className="flex-1 border-border hover:border-blue-500"
+                    onClick={() => handleLinkClick(project.github)}
                   >
                     <Github size={16} className="mr-2" />
                     Code
@@ -99,6 +102,7 @@ const Projects = () => {
                   <Button 
                     size="sm"
                     className="flex-1 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
+                    onClick={() => handleLinkClick(project.live)}
                   >
                     <ExternalLink size={16} className="mr-2" />
                     Live Demo
