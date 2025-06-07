@@ -60,11 +60,11 @@ const Projects = () => {
               className="overflow-hidden bg-card border-border hover:border-blue-500/50 transition-all duration-300 glow-hover group"
             >
               <div className="relative">
-                {project.image && project.title === "Recipe Recommendation System" ? (
+                {project.title === "Recipe Recommendation System" ? (
                   <div className="h-48 overflow-hidden">
                     <img 
                       src={project.image} 
-                      alt={project.title}
+                      alt="Recipe dishes and food"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
@@ -73,7 +73,6 @@ const Projects = () => {
                     <project.icon size={48} className="text-blue-400 group-hover:scale-110 transition-transform" />
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
               
               <div className="p-6">
