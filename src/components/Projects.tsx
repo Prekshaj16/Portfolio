@@ -2,7 +2,6 @@
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github, Code, Palette, Zap } from 'lucide-react';
-const image = "/Recipe.png";
 
 const Projects = () => {
   const projects = [
@@ -27,11 +26,9 @@ const Projects = () => {
     {
       title: "Recipe Recommendation System",
       description: "A dynamic recipe recommendation system that displays multiple recipe videos and allows seamless playback for an interactive cooking experience.",
-      
       tags: ["React.js", "Tailwind CSS", "API"],
       github: "https://github.com/Prekshaj16/RecipeApp_react.js",
-      image : <img 
-      src = {image} />,
+      image: "/Recipe.png",
       live: "https://recipe-app-react-js-fawn.vercel.app/",
       icon: Code 
     }
@@ -63,9 +60,19 @@ const Projects = () => {
               className="overflow-hidden bg-card border-border hover:border-blue-500/50 transition-all duration-300 glow-hover group"
             >
               <div className="relative">
-                <div className="h-48 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 flex items-center justify-center">
-                  <project.icon size={48} className="text-blue-400 group-hover:scale-110 transition-transform" />
-                </div>
+                {project.image && project.title === "Recipe Recommendation System" ? (
+                  <div className="h-48 overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                ) : (
+                  <div className="h-48 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                    <project.icon size={48} className="text-blue-400 group-hover:scale-110 transition-transform" />
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
               
