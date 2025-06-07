@@ -28,7 +28,7 @@ const Projects = () => {
       description: "A dynamic recipe recommendation system that displays multiple recipe videos and allows seamless playback for an interactive cooking experience.",
       tags: ["React.js", "Tailwind CSS", "API"],
       github: "https://github.com/Prekshaj16/RecipeApp_react.js",
-      image: "/Recipe.png",
+      image: "/lovable-uploads/fd580ba0-c21a-4d50-8142-dc1b5d1630e5.png",
       live: "https://recipe-app-react-js-fawn.vercel.app/",
       icon: Code 
     }
@@ -64,8 +64,9 @@ const Projects = () => {
                   <div className="h-48 overflow-hidden">
                     <img 
                       src={project.image} 
-                      alt="Recipe dishes and food"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      alt="Recipe dishes"
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                      style={{ objectPosition: 'center 30%' }}
                     />
                   </div>
                 ) : (
